@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+/*General Styling*/
+
+body {
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p, a, form, button {
+font-family: 'Droid Sans', sans-serif;
+padding-bottom: 1%;
+}
+
+header, section, footer {
+  padding: 2%;
+  margin: 0%;
+}
+
+.about-me-section, .map-section, footer {
+  background-color: #aba361;
+  color: #420c14;
+}
+
+.skills, .my-experience-section {
+  background-color: #bad9b5;
+  color: #420c14;
+  text-align: justify;
+
+}
+
+.fa {
+  color: #420c14;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+/*Header styling*/
+
+header {
+  background-color: #bad9b5;
+  min-height: 15vh;
+}
+/*Title styling*/
+
+
+.title {
+  background-image:url('http://bestanimations.com/Nature/Water/ocean-water-animated-gif-3.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 40vh;
+  color: white;
+  padding: 2%;
+}
+
+.title h1 {
+  padding: 2%;
+  font-size: 2rem;
+}
+
+.me {
+  font-size: 3rem;
+}
+
+.title p {
+  padding: 2%;
+}
+
+nav {
+  min-height: 20%;
+}
+
+nav img {
+  width: 75px;
+}
+
+nav a {
+  color:white;
+}
+
+
+
+/*About me styling*/
+
+.about-box {
+background-color: #bad9b5;
+color: #420c14;
+margin: 4% 20%;
+padding: 5%;
+}
+
+.about-box p {
+  line-height: 1.5;
+}
+
+.about-box h2 {
+  padding-bottom: 5%;
+}
+
+/*Skills section styling*/
+
+.skills i {
+font-size: 2rem;
+color: #420c14;
+text-align: center;
+display: block;
+}
+
+/*Map section styling*/
+
+
+iframe {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 60%;
+  height: 60vh;
+
+}
+
+/*Experience styling*/
+
+.my-experience-section h3, .my-experience-section h4{
+  text-align: left;
+}
+
+
+/*Footer styling*/
+
+
+
+footer .fa {
+  font-size: 4rem;
+}
+
+button {
+  border-radius: 25%;
+  background-color: #bad9b5;
+  padding: 1%;
+  font-size: 1.3rem;
+  border: 2px solid #420c14;
+}
+
+footer a {
+  text-decoration: none;
+  padding-right: 10%;
+}
+
+.social {
+  display: inline-flex;
+}
+
+form {
+  width: 100%;
+}
+
+input, textarea {
+  margin-bottom: 5%;
+}
+
+label{
+  text-align: right;
+  padding-right: 5%;
+}

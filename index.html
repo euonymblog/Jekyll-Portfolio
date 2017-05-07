@@ -1,0 +1,113 @@
+---
+layout: default
+title: Antonia Mochan
+map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5334.0724779030115!2d144.9781594075656!3d-37.86613386850912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad668668bf6adbb%3A0xda5b819612f5d1a0!2sBlank+Canvas+Coworking!5e0!3m2!1sen!2sau!4v1493951979631"></iframe>
+skills:
+  - name: Communication Strategy
+    description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    icon: bullhorn
+  - name: Extreme Media Relations
+    description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    icon: newspaper-o
+  - name: Website management
+    description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    icon: globe
+  - name: Writing and editing
+    description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    icon: pencil
+  - name: Automation and integration
+    description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    icon: magic
+  - name: Theatre directing
+    description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    icon: users
+
+experiences:
+  - role: Communication Consultant
+    employer: Self-employed
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: user-circle-o
+  - role: Media Spokesperson
+    employer: European Commission
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: user-circle-o
+  - role: Head of Public Communicaiton
+    employer: European Commission in the UK
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    icon: user-circle-o
+---
+
+<div class="title">
+  <h1>
+    <div class="me">Antonia Mochan</div> A One-Woman Comms Department
+  </h1>
+  <i class="fa fa-users" aria-hidden="true"></i>
+  <p> Melbourne Australia</p>
+</div>
+
+
+<!-- ABOUT ME -->
+  <section class="about-me-section">
+    <div class="about-box">
+      <h2>About me</h2>
+      <p>SEO, website, social media, newsletters... nowadays there are so many ways to communicate. Finding the time as a small business owner or NGO can be frustrating - you know you need to do this stuff, but if you take the time to do it, you're not getting your core work done. That's where the One Woman Comms Department comes in. I can work with you to identify, design and provide the services your organisation needs. I've worked as a media spokesperson for an international organisation, in public communication roles and consulting into small organisations like yours. I am familiar with website design and management, writing, editing, talking to journalists and making the most of social media - all the things you need to have someone take care of. So please browse my site, take a look at my skills and experience and if you like what you see, get in touch! </p>
+    </div>
+  </section>
+
+<!-- MY SKILLS -->
+  <section class="skills grid">
+    <h2 class="col-12">My Skills</h2>
+
+    {% for skill in page.skills %}
+      <div class="col-4">
+        <i class="fa fa-{{ skill.icon }}" aria-hidden="true"></i>
+        <h3>{{ skill.name }}</h3>
+        <p>{{skill.description}}</p>
+      </div>
+    {% endfor %}
+
+
+  </section>
+
+  <!-- MAP SECTION -->
+  <section class="map-section">
+    <div>
+      <h2> Where I am</h2>
+      <p>I work out of Blank Canvas Co-working in St Kilda, Australia.</p>
+      <!-- Embed Google Map here -->
+      <div> {{page.map}}
+      </div>
+    </div>
+
+  </section>
+
+<!-- MY EXPERIENCE -->
+  <section class="my-experience-section grid">
+    <div class="col-12"><h2>My experience</h2>
+    </div>
+{% for experience in page.experiences %}
+      <div class="grid">
+
+        <div class="col-1">
+          <i class="fa fa-{{ experience.icon }}" aria-hidden="true"></i>
+        </div>
+
+        <div class="col-4">
+          <h3>{{ experience.role }}</h3>
+          <h4>{{ experience.employer }}</h4>
+        </div>
+
+        <div class="col-7">
+          <p>{{ experience.description }}</p>
+        </div>
+      </div>
+{% endfor %}
+
+
+</section>
+
+
+
+</body>
+
+</html>
